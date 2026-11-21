@@ -45,8 +45,15 @@ Repositori kontrol bersama untuk menyinkronkan antrean bounty, spesifikasi tekni
 
 *(Muse: perbarui blok ini setiap kali ada progres atau butuh pembuatan repo baru)*
 
-- **Terakhir diperbarui (WIB):** 20 Nov 2026, 11:42
+- **Terakhir diperbarui (WIB):** 21 Nov 2026, 16:41
 - **Bounty aktif saat ini:** `gta6-cover-art-01` + `gta6-trophy-guide-01` — keduanya $250 (escrowed) — **SUBMITTED** 20 Nov 2026 ~04:31 WIB; all five November builds are in (github-core-clone-01, tiny-chess-01, token-radar-01, gta6-cover-art-01, gta6-trophy-guide-01)
+- **Watcher pass 21 Nov 2026, 16:41 WIB:** 4 bounty baru terdeteksi (fase `submission`, deadline >2 jam) — BELUM dimulai, menunggu kata Dani:
+  - `news-image-20261121` — $100, deadline 23 Nov 2026, 07:00 WIB (rangkum berita dunia 21 Nov dalam satu gambar).
+  - `csv-reader-speed-01-run-20261121` — $100, deadline 23 Nov 2026, 09:42 WIB (baca file CSV rusak lebih cepat).
+  - `sokoban-solver-01-run-20261121` — $100, deadline 23 Nov 2026, 10:00 WIB (solver Sokoban terbaik).
+  - `best-spot-the-difference-game-20261121-0451` — $50, deadline 21 Nov 2026, 23:51 WIB (game spot-the-difference terbaik — deadline paling mepet, ~7 jam).
+  - Catatan: watcher `/api/competitions` sendiri tidak melihat keempat slug ini (masih kena batas 50 item pertama, lihat "Catatan watcher" di bawah); keempatnya terverifikasi lewat endpoint detail + `/live` (phase `submission`, hadiah terverifikasi dari detail API + pengumuman kit `status`) dan prompt-nya sudah ditulis di `~/.config/makefun/prompts/` serta dicatat di `seen-bounties.json` sebagai `triggered`. 5 slug lain di halaman 2 masih fase `upcoming` (bukan `submission`), jadi tidak dihitung: `best-heist-game-20261122-0559`, `best-stealth-game-20261121-1759`, `make-the-ai-judge-feel-awe-20261121-1600`, `the-poem-about-two-agents-20261121-1441`, `the-poem-about-stopping-20261121-1927`.
+  - Status bounty yang dilacak tidak berubah: github-core-clone-01, humans-02, gta6-01 tetap `round 1 scored, outcome not decided yet` (kit `status --submission` 21 Nov 16:41 WIB, semua intake checks pass, tidak ada prize yang bisa di-claim). Repo `satriax30-commits/makefun-github-core-clone` terverifikasi ada (HEAD `61919565556421988afb0136e6fcb213b372bfa8`, sama seperti di STATE.md). Deadline yang lewat hari ini: github-core-clone-01 tutup 13:30 WIB; humans-02 + gta6-cover-art-01 tutup 17:30 WIB; gta6-trophy-guide-01 tutup 18:00 WIB. Catatan kit: salinan kit github-core-clone-01 level 23, situs sudah level 33 — kit baru perlu diunduh sebelum build bounty berikutnya.
 - **Watcher pass 20 Nov 2026, 11:42 WIB:** 2 bounty baru terdeteksi (fase `submission`, deadline >2 jam) — keduanya di-triage dan dilewati, tidak ada yang dimulai:
   - `news-image-20261120` — $250 (escrowed), deadline 22 Nov 2026, 07:00 WIB (rangkum berita dunia 20 Nov dalam satu gambar) — SKIP: daily news image, bukan pipeline kami (sama seperti news-image-20261117/18/19).
   - `gta6-clipper-01` — $500 (escrowed), deadline 23 Nov 2026, 08:00 WIB (clip GTA 6 untuk views YouTube terbanyak) — SKIP: butuh channel YouTube + editing video, bukan code build.
